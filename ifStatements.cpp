@@ -48,12 +48,26 @@ int getMin(int num1, int num2) {
     }
 }
 
-int getEqual(int num1, int num2) {
+string getEqual(int num1, int num2) {
     if (num1 == num2) {
-        return 0;
+        return "they are equal";
     } else { 
-        return -1;
+        return "they are not equal";
     }
+}
+
+string isNegative(int num1, int num2) {
+    if (num1 < 0 || num2 < 0) {
+        return "true";
+    }
+    return "false";
+}
+
+string isPositive(int num1, int num2) {
+    if (num1 > 0 || num2 > 0) {
+        return "true";
+    }
+    return "false";
 }
 
 int main() {
@@ -81,10 +95,18 @@ int main() {
     checkInputs();
     cout << "Your answer : " << getMin(nums[1], nums[2]) << endl << endl;
 
-    std::cout << "The following will return 0 if the two numbers are equal and -1 if they are not" << endl;
+    std::cout << "The following will say if the two numbers are equal" << endl;
     checkInputs();
     cout << "Your answer : " << getEqual(nums[1], nums[2]) << endl << endl;
     
+    std::cout << "The following will return true whether any of the numbers are negative" << endl << endl;
+    checkInputs();
+    cout << "Your answer : " << isNegative(nums[1], nums[2]) << endl << endl;
+
+    std::cout << "The following will return true whether any of the numbers are positive" << endl << endl;
+    checkInputs();
+    cout << "Your answer : " << isPositive(nums[1], nums[2]) << endl << endl;
+
 
     return 0;
 }
