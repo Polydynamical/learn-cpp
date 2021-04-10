@@ -5,13 +5,13 @@
 using namespace std;
 
 bool isOperator(string v) {
-    return std::regex_match(v, std::regex("^[*/+%-]+$"));
 
+    return std::regex_match(v, std::regex("^[*/+%-]+$"));
 }
 
 bool isNumber(string e) {
-    return std::regex_match(e, std::regex("^[0-9]+$"));
 
+    return std::regex_match(e, std::regex("^[0-9]+$"));
 }
 
 double compute(int num1, char operatorValue, int num2) {
@@ -36,14 +36,9 @@ double compute(int num1, char operatorValue, int num2) {
 
 int main() {
     char operatorValue;
-    string operatorInput;
-    string num1Input;
-    string num2Input;
-    int num1;
-    int num2;
-    bool validOperator = false;
-    bool validNum1 = false;
-    bool validNum2 = false;
+    string operatorInput, num1Input, num2Input;
+    int num1, num2;
+    bool validOperator, validNum1, validNum2 = false;
 
 
     while(validOperator == false) {
@@ -81,4 +76,5 @@ int main() {
 
     cout << "Your answer : " << compute(num1, operatorValue, num2) << endl << endl;
 
+    return 0;
 }
