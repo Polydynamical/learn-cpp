@@ -1,2 +1,2 @@
 # learn-cpp
-This is me trying to learning cpp.
+This is me trying to learning C++.
