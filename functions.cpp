@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void sayHi(string name) {
+void sayHi(string name) { // void means don't  return anything
     std::cout << endl << "I am now a function! I am supposed to say hi to you!" << endl;
     name[0] = std::toupper(name[0]);
     std::cout << "Hi " << name << "!" << endl;
@@ -18,5 +18,5 @@ int main() {
     std::getline(std::cin, name);
     sayHi(name);
 
-    return 0;
+    return 0; // exit(0); exit code 0; success.
 }

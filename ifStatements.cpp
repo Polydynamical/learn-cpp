@@ -29,22 +29,18 @@ void checkInputs() {
 }
 
 int getMax(int num1, int num2) {
-    if (num1 > num2) {
+    if (num1 >= num2) {
         return num1;
-    } else if (num2 > num1) {
-        return num2;
     } else {
-        return 0;
+        return num2;
     }
 }
 
 int getMin(int num1, int num2) {
-    if (num1 < num2) {
+    if (num1 <= num2) {
         return num1;
-    } else if (num2 < num1) {
-        return num2;
     } else {
-        return 0;
+        return num2;
     }
 }
 
@@ -87,11 +83,11 @@ int main() {
 
     std::cout << "In addition to boolean comparisons, we can do math comparison as well." << endl;
 
-    std::cout << "The following will return the greater of two numbers" << endl << endl;
+    std::cout << "The following will return the greatest of the two numbers" << endl << endl;
     checkInputs(); 
     cout << "Your answer : " << getMax(nums[1], nums[2]) << endl << endl;
     
-    std::cout << "The folowing will return the minimum of two numbers:" << endl << endl;
+    std::cout << "The folowing will return the least of the two numbers:" << endl << endl;
     checkInputs();
     cout << "Your answer : " << getMin(nums[1], nums[2]) << endl << endl;
 
