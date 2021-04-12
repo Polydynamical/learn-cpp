@@ -115,3 +115,4 @@
 
 - Known functions (ceiling, floor, min, max, factorial, fibonacci numbers, binet's formula)
 - Know logarithms (all log rules and natural logarithm)
+- Use unsigned int instead of int when possible
