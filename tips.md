@@ -116,3 +116,4 @@
 - Known functions (ceiling, floor, min, max, factorial, fibonacci numbers, binet's formula)
 - Know logarithms (all log rules and natural logarithm)
 - Use unsigned int instead of int when possible
+- know the precise functions to use. i.e. don't use sizeof(string) for finding the length of a string. Use string.length().
