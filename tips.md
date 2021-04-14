@@ -41,7 +41,7 @@
 
     This can be fixed with changing ```long long b = a * a``` to ```long long b = (long long)a * a;```
 
-- Checking for equality between flating point numbers should not be done with "==" (sometimes c++ has precision) errors. Use the following:
+- Checking for equality between floating point numbers should not be done with "==" (sometimes c++ has precision) errors. Use the following:
     ```cpp
     if (abs(a-b) < 1e-9) {
         // a and b are equal
@@ -104,7 +104,7 @@
 - Know basic number theory (arithmetic sums, geometric sums, harmonic sums,) 
 - Know set theory (intersections, unions, complements, differences, subsets)
 - Know logic:
-    A B | (¬A) (¬B) (A ∧ B) (A ∨ B) (A ⇒ B) (A ⇔ B)
+    A B | (¬ A) (¬ B) (A ∧ B) (A ∨ B) (A ⇒ B) (A ⇔ B)
     ________________________________________________
     0 0 | 1      1     0       0       1         1  
     0 1 | 1      0     0       1       1         0  
@@ -117,3 +117,4 @@
 - Know logarithms (all log rules and natural logarithm)
 - Use unsigned int instead of int when possible
 - know the precise functions to use. i.e. don't use sizeof(string) for finding the length of a string. Use string.length().
+- Using math in solving problems is invaluable; look at Introductory/MissingNumber.cpp and Introductory/IncreasingArray.cpp
