@@ -118,3 +118,4 @@
 - Use unsigned int instead of int when possible
 - know the precise functions to use. i.e. don't use sizeof(string) for finding the length of a string. Use string.length().
 - Using math in solving problems is invaluable; look at Introductory/MissingNumber.cpp and Introductory/IncreasingArray.cpp
+- Always remember to initalize variables if you are using "+=" or "-=", etc.
