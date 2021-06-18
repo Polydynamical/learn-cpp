@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
-
+ 
 using namespace std;
-
+ 
 long long x,y,t,ans;
-
+ 
 void calc() {
-
+ 
     if (y >= x) {
         if (y % 2 == 0) {
             ans = y * y - x + 1;
@@ -21,7 +21,7 @@ void calc() {
     }
     cout << ans << "\n";
 }
-
+ 
 int main() {
     cin >> t;
     
@@ -30,6 +30,6 @@ int main() {
         calc();
         
     }    
-
+ 
     return 0;
 }
